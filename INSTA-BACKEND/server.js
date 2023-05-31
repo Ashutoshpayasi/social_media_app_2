@@ -17,7 +17,7 @@ require("./model/user")
 require("./model/postmodel")
 app.use(express.json())
 app.use(cors({
-    origin:"https://social-media-app-2-8aigamsu5-ashutoshpayasi.vercel.app/signin"
+    origin:"http://social-media-app-2-ashutoshpayasi.vercel.app/"
 }))
 app.use(require("./route/auth"))
 app.use(require("./route/post"))
