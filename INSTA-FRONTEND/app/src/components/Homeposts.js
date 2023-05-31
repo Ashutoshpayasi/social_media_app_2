@@ -29,7 +29,7 @@ function Homeposts() {
   
   console.log(data)
   useEffect(()=>{
-   fetch("https://social-media-app-5x8e.onrender.com/allpost",{
+   fetch("https://social-media-app-2-eh9y.onrender.com/allpost",{
     
     headers:{
       "Authorization":"Bearer "+localStorage.getItem("tok")
@@ -43,7 +43,7 @@ function Homeposts() {
    })
   },[refresh])
   function likepost(id){
-      fetch("https://social-media-app-5x8e.onrender.com/like",{
+      fetch("https://social-media-app-2-eh9y.onrender.com/like",{
         method:"put",
         headers:{
           "Content-Type":"application/json",
@@ -64,7 +64,7 @@ function Homeposts() {
   function unlikepost(id){
     
     
-    fetch("https://social-media-app-5x8e.onrender.com/unlike",{
+    fetch("https://social-media-app-2-eh9y.onrender.com/unlike",{
       method:"put",
       headers:{
         "Content-Type":"application/json",
@@ -85,7 +85,7 @@ function Homeposts() {
 }
 
 function comment(){
-  fetch("https://social-media-app-5x8e.onrender.com/comment",{
+  fetch("https://social-media-app-2-eh9y.onrender.com/comment",{
     method:"put",
     headers:{
       "Content-Type":"application/json",
@@ -114,7 +114,7 @@ function comment(){
 }
 
 function deletecomment(cid){
-  fetch("https://social-media-app-5x8e.onrender.com/deletecomment",{
+  fetch("https://social-media-app-2-eh9y.onrender.com/deletecomment",{
     method:"put",
     headers:{
       "Content-Type":"application/json",

@@ -19,7 +19,7 @@ function Addpost() {
   useEffect(() => {
     console.log(err)
     if (url) {
-      fetch("https://social-media-app-5x8e.onrender.com/addpost", {
+      fetch("https://social-media-app-2-eh9y.onrender.com/addpost", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

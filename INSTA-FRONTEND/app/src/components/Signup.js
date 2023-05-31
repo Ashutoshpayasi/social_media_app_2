@@ -17,7 +17,7 @@ function Signup() {
   const [mess, setMess] = useState(false)
   const postdata = () => {
     
-    fetch("https://social-media-app-5x8e.onrender.com/signup", {
+    fetch("https://social-media-app-2-eh9y.onrender.com/signup", {
       method: "post",
       headers: {
         "Content-Type": "application/json"

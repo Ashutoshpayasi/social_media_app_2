@@ -236,7 +236,7 @@ function followuser(uid){
   
 }
 function unfollowuser(uid){
-  fetch("https://social-media-app-5x8e.onrender.com/unfollow",
+  fetch("https://social-media-app-2-eh9y.onrender.com/unfollow",
   {
     method:"put",
     headers:{

@@ -16,7 +16,7 @@ function Signin() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const logindata = () => {
-    fetch("https://social-media-app-5x8e.onrender.com/signin", {
+    fetch("https://social-media-app-2-eh9y.onrender.com/signin", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

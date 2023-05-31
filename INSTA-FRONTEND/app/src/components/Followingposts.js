@@ -28,7 +28,7 @@ function Followingpost() {
   console.log(data)
   
   useEffect(()=>{
-   fetch(`https://social-media-app-5x8e.onrender.com/followedpost/${JSON.parse(localStorage.getItem("userd"))._id}`,{
+   fetch(`https://social-media-app-2-eh9y.onrender.com/followedpost/${JSON.parse(localStorage.getItem("userd"))._id}`,{
     
     headers:{
       "Authorization":"Bearer "+localStorage.getItem("tok")
@@ -43,7 +43,7 @@ function Followingpost() {
   },[refresh])
   
   function likepost(id){
-      fetch("https://social-media-app-5x8e.onrender.com/like",{
+      fetch("https://social-media-app-2-eh9y.onrender.com/like",{
         method:"put",
         headers:{
           "Content-Type":"application/json",
@@ -64,7 +64,7 @@ function Followingpost() {
   function unlikepost(id){
     
     
-    fetch("https://social-media-app-5x8e.onrender.com/unlike",{
+    fetch("https://social-media-app-2-eh9y.onrender.com/unlike",{
       method:"put",
       headers:{
         "Content-Type":"application/json",
@@ -85,7 +85,7 @@ function Followingpost() {
 }
 
 function comment(){
-  fetch("https://social-media-app-5x8e.onrender.com/comment",{
+  fetch("https://social-media-app-2-eh9y.onrender.com/comment",{
     method:"put",
     headers:{
       "Content-Type":"application/json",

@@ -25,7 +25,7 @@ function Navbar() {
   function getlist(inp){
     setInput(inp)
     if(inp){
-     fetch("https://social-media-app-5x8e.onrender.com/searchuser",{
+     fetch("https://social-media-app-2-eh9y.onrender.com/searchuser",{
       method:"post",
       headers:{
        "Content-Type":"application/json",

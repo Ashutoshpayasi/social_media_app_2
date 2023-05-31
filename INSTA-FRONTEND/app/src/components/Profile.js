@@ -31,7 +31,7 @@ function Profile() {
     const [data, setData] = useState([])
     console.log(data)
     useEffect(() => {
-        fetch("https://social-media-app-5x8e.onrender.com/mypost", {
+        fetch("https://social-media-app-2-eh9y.onrender.com/mypost", {
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("tok")
             }
@@ -48,7 +48,7 @@ function Profile() {
     function likepost(id){
     
     
-        fetch("https://social-media-app-5x8e.onrender.com/like",{
+        fetch("https://social-media-app-2-eh9y.onrender.com/like",{
           method:"put",
           headers:{
             "Content-Type":"application/json",
@@ -69,7 +69,7 @@ function Profile() {
     function unlikepost(id){
       
       
-      fetch("https://social-media-app-5x8e.onrender.com/unlike",{
+      fetch("https://social-media-app-2-eh9y.onrender.com/unlike",{
         method:"put",
         headers:{
           "Content-Type":"application/json",
@@ -90,7 +90,7 @@ function Profile() {
   }
   
   function comment(){
-    fetch("https://social-media-app-5x8e.onrender.com/comment",{
+    fetch("https://social-media-app-2-eh9y.onrender.com/comment",{
       method:"put",
       headers:{
         "Content-Type":"application/json",
@@ -116,7 +116,7 @@ function Profile() {
   }  
 
   function deletpost(id){
-      fetch(`https://social-media-app-5x8e.onrender.com/deletpost/${id}`,{
+      fetch(`https://social-media-app-2-eh9y.onrender.com/deletpost/${id}`,{
         method:"delete",
         headers:{
          "Content-Type":"application/json",

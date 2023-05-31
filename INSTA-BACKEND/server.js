@@ -17,7 +17,7 @@ require("./model/user")
 require("./model/postmodel")
 app.use(express.json())
 app.use(cors({
-    origin:"http://localhost:3000"
+    origin:"https://social-media-app-2-eh9y.onrender.com"
 }))
 app.use(require("./route/auth"))
 app.use(require("./route/post"))
