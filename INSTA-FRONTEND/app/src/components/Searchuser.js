@@ -118,7 +118,7 @@ function Searchuser() {
       // dispatch({type:"USER",payload:localStorage.getItem("userd")})
       const [data, setData] = useState([])
       useEffect(() => {
-          fetch("http://localhost:5000/searchprofile", {
+          fetch("https://social-media-app-2-eh9y.onrender.com/searchprofile", {
               method:"post",
               headers:{
               "Content-Type":"application/json"
@@ -143,7 +143,7 @@ function Searchuser() {
   function likepost(id){
     
     
-      fetch("http://localhost:5000/like",{
+      fetch("https://social-media-app-2-eh9y.onrender.com/like",{
         method:"put",
         headers:{
           "Content-Type":"application/json",
@@ -164,7 +164,7 @@ function Searchuser() {
   function unlikepost(id){
     
     
-    fetch("http://localhost:5000/unlike",{
+    fetch("https://social-media-app-2-eh9y.onrender.com/unlike",{
       method:"put",
       headers:{
         "Content-Type":"application/json",
@@ -185,7 +185,7 @@ function Searchuser() {
 }
 
 function comment(){
-  fetch("https://social-media-app-5x8e.onrender.com/comment",{
+  fetch("https://social-media-app-2-eh9y.onrender.com/comment",{
     method:"put",
     headers:{
       "Content-Type":"application/json",
@@ -211,7 +211,7 @@ function comment(){
 }
 
 function followuser(uid){
-  fetch("https://social-media-app-5x8e.onrender.com/follow",
+  fetch("https://social-media-app-2-eh9y.onrender.com/follow",
   {
     method:"put",
     headers:{
