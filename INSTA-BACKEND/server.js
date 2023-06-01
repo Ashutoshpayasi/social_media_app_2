@@ -16,9 +16,7 @@ mongoose.connection.on("error",(err)=>{
 require("./model/user")
 require("./model/postmodel")
 app.use(express.json())
-app.use(cors({
-    origin:"http://social-media-app-2-ashutoshpayasi.vercel.app/"
-}))
+app.use(cors())
 app.use(require("./route/auth"))
 app.use(require("./route/post"))
 

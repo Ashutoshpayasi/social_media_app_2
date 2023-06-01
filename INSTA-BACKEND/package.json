@@ -8,7 +8,7 @@
     "start":"nodemon server.js"
   },
   "author": "",
-  "proxy":"https://social-media-app-2-eh9y.onrender.com",
+  
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",  
